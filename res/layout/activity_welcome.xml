@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hashkey.trackme.WelcomeActivity" >
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_login_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="#60002030"
+        android:onClick="logIn"
+        android:text="@string/LoginButton" />
+
+    <EditText
+        android:id="@+id/password_login_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/PasswordHint"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/username_login_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:typeface="monospace"
+        android:layout_above="@+id/password_login_edit_text"
+        android:layout_alignRight="@+id/password_login_edit_text"
+        android:layout_alignEnd="@+id/password_login_edit_text"
+        android:hint="@string/PhoneNumberHint" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/text_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ForgotPasswordHint"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        android:text="@string/RegisterButton"
+        android:onClick="signUp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ApplicationName"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:typeface="serif"
+        android:textStyle="italic" />
+
+</RelativeLayout>

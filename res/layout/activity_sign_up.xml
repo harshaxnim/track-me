@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hashkey.trackme.SignUpActivity" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="428dp" >
+	  
+   	<EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="@string/PhoneNumberHint"
+        android:layout_below="@+id/last_name_edit_text"
+        android:layout_alignLeft="@+id/last_name_edit_text"
+        android:layout_marginBottom="5dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/PasswordHint"
+        android:layout_below="@+id/username_edit_text"
+        android:layout_alignLeft="@+id/username_edit_text"
+        android:layout_marginBottom="5dp"
+         />
+
+    <EditText
+        android:id="@+id/password_again_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/ConfirmPasswordHint"
+        android:layout_below="@+id/password_edit_text"
+        android:layout_alignLeft="@+id/password_edit_text" />
+
+    <EditText
+        android:id="@+id/last_name_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="@string/LastNameHint" 
+        android:layout_below="@+id/first_name_edit_text"
+        android:layout_alignLeft="@+id/first_name_edit_text"
+        android:layout_marginBottom="5dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/first_name_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="@string/FirstNameHint"
+        android:layout_below="@+id/nick_edit_text"
+        android:layout_marginBottom="5dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/nick_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_name_edit_text"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="@string/nick_hint"
+        android:inputType="textPersonName" 
+        android:typeface="monospace" >
+    	<requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/RegisterTitle"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/emergency_phone_edit_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password_again_edit_text"
+        android:ems="10"
+        android:hint="Emergency Contact"
+        android:inputType="phone"
+        android:textColorHint="@android:color/holo_red_light" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#60000000"
+        android:onClick="signUp"
+        android:text="@string/ProceedButton" />
+
+	</RelativeLayout>
+</ScrollView>

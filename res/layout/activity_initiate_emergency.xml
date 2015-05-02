@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hashkey.trackme.InitiateEmergencyActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/emergency_button_015"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="00:15" />
+
+            <Button
+                android:id="@+id/emergency_button_030"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="00:30" />
+
+            <Button
+                android:id="@+id/emergency_button_045"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="00:45" />
+
+            <Button
+                android:id="@+id/emergency_button_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="01:00" />
+
+            <Button
+                android:id="@+id/emergency_button_130"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="01:30" />
+
+            <Button
+                android:id="@+id/emergency_button_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="02:00" />
+
+            <Button
+                android:id="@+id/emergency_button_230"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="02:30" />
+
+            <Button
+                android:id="@+id/emergency_button_300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="03:00" />
+
+            <Button
+                android:id="@+id/emergency_button_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="04:00" />
+
+            <Button
+                android:id="@+id/emergency_button_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="05:00" />
+
+            <Button
+                android:id="@+id/emergency_button_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="07:00" />
+
+            <Button
+                android:id="@+id/emergency_button_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startTracking"
+                android:text="10:00" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="37dp"
+        android:rotation="270"
+        android:text="Check back in..." />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/scrollView1"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/view1" >
+	
+	    <TextView
+	        android:id="@+id/help_text_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="10dp"
+	        android:text="Quick Help:\n\nUse the &apos;Check back in&apos; feature to send an alert to your gaurdian if you do not respond in the selected amount of time. You can come back here to increment the timer by clicking on the times given to the right.\n\nYou can fire an alarm right away by clicking the button below.\n\nIf everything is fine, hit the &apos;End Trakcing&apos; button (duh)!"
+	        android:textColor="@android:color/darker_gray"
+	        android:onClick="toggleHelp"
+	        android:clickable="true"
+	        android:visibility="invisible"
+	        android:textStyle="italic" />
+
+	    <Button
+	        android:id="@+id/all_fine_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:onClick="endTracking"
+	        android:text="All fine. End Tracking!" />
+
+	    <ImageButton
+	        android:id="@+id/emergency_act_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/all_fine_button"
+	        android:layout_centerHorizontal="true"
+	        android:onClick="startTracking"
+	        android:src="@drawable/ic_shortcut_emergency" />
+
+	    <Button
+	        android:id="@+id/help_usage_button"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="How to use?"
+	        android:onClick="toggleHelp"
+	        android:visibility="visible" />
+
+	</RelativeLayout>
+</RelativeLayout>

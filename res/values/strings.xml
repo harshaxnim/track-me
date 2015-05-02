@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrackMe</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Related to main -->
+    <string name="hi">Hi!</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Log in</string>
+    <string name="title_activity_signup">Sign up</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Password Again</string>
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_blank_emergency">enter an emergency contact</string>
+    <string name="error_mismatched_passwords">passwords do not match. enter the same password twice</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Logging you in&#8230;</string>
+    <string name="progress_signup">Signing you up&#8230;</string>
+    <string name="progress_logout">Logging you out&#8230;</string>
+
+    <!-- from keethu -->
+    <string name="ApplicationName">TrackMe</string>
+    <string name="LoginButton">Login</string>
+    <string name="RegisterButton">Sign Up</string>
+    <string name="ForgotPasswordHint">Forgot Password?</string>
+    <string name="PhoneNumberHint">Phone Number</string>
+    <string name="PasswordHint">Password</string>
+    <string name="FirstNameHint">First Name</string>
+    <string name="LastNameHint">Last Name</string>
+    <string name="ConfirmPasswordHint">Confirm Password</string>
+    <string name="RegisterTitle">Let Us Track You</string>
+    <string name="ProceedButton">Proceed</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="nick_hint">Nick Name</string>
+    <string name="title_activity_home">Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">Welcome</string>
+
+    <!-- From Welcome -->
+    <string name="logout_menu_home_button">Log Out</string>
+    <string name="about_menu_home_button">About</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_initiate_emergency">InitiateEmergencyActivity</string>
+    <string name="title_activity_find">Find</string>
+
+</resources>
